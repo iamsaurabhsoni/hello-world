@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+body{
+	width: 400px;
+	margin: 50px auto;
+}
+img{
+	width: 100%;
+}
+figure{
+	margin: 0px;
+	position: relative;
+	border: 5px solid white;
+	box-shadow: 0 0 4px rgba(0,0,0,.4);
+	cursor: pointer;
+
+}
+figure:hover figcaption{
+	opacity: 1;
+	-webkit-transform:rotate(0);
+}
+figcaption{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	background: rgba(0,0,0,.3);
+	
+	height: 100%;
+	width: 100%;
+	
+	color: white;
+	-webkit-transition:all 1s ease-in;
+	-webkit-transform:rotate(360deg);
+	-webkit-transition-delay:.5s;
+
+}
+figure img{
+	-webkit-transition:all 1s;
+}
+figure:hover img{
+	-webkit-transform:scale(1.02);
+}
+figcaption h1{
+	background: black;
+	margin-top: 20px;
+}
+figcaption h1,figcaption p{
+	padding: 10px 20px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	position: relative;
+	
+	
+	
+}
+figure:hover h1,
+figure:hover p{
+	left: 0;
+
+}
+</style>
+<body>
+	<figure>
+	<img src="2.jpg">
+	<figcaption>
+		<h1>emma watson</h1>
+	<p>emma watson.emma watson.emma watson.emma watson.emma watson.emma watson.emma watson.emma watson.
+	emma watson.emma watson.emma watson.emma watson.emma watson.emma watson.emma watson.emma watson.</p>
+	<p>emma watson.emma watson.emma watson.emma watson.emma watson.emma watson.emma watson.emma watson.
+	emma watson.emma watson.emma watson.emma watson.emma wat.</p>
+</figcaption>
+</figure>
+</body>
+</html>
